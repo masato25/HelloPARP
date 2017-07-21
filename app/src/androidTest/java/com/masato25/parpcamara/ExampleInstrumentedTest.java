@@ -1,4 +1,4 @@
-package com.masato25.hellopapp;
+package com.masato25.parpcamara;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.masato25.hellopapp", appContext.getPackageName());
+        assertEquals("com.masato25.parpcamara", appContext.getPackageName());
     }
 }

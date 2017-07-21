@@ -1,4 +1,4 @@
-package com.masato25.hellopapp;
+package com.masato25.parpcamara;
 
 import org.junit.Test;
 
