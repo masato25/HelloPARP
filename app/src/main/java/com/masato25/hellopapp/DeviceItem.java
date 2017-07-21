@@ -8,6 +8,7 @@ public class DeviceItem {
 
     private String deviceName;
     private String address;
+    private int bondstatus;
     private boolean connected;
 
     public String getDeviceName() {
@@ -22,13 +23,18 @@ public class DeviceItem {
         return address;
     }
 
+    public int getBondStatus() {
+        return bondstatus;
+    }
+
     public void setDeviceName(String deviceName) {
         this.deviceName = deviceName;
     }
 
-    public DeviceItem(String name, String address, String connected){
+    public DeviceItem(String name, String address, int bondstatus, String connected){
         this.deviceName = name;
         this.address = address;
+        this.bondstatus = bondstatus;
         if (connected == "true") {
             this.connected = true;
         }

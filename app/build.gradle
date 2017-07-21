@@ -17,6 +17,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+}
+
+repositories {
+    maven {
+        url 'http://dl.bintray.com/eoinsha/java-phoenix-channels';
+    }
 }
 
 dependencies {
@@ -27,4 +38,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support:design:26.+'
     testCompile 'junit:junit:4.12'
+    compile('com.github.eoinsha:JavaPhoenixChannels:0.2') {
+        exclude module: 'groovy-all'
+    }
 }
